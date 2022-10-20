@@ -6,8 +6,10 @@ import { SocialWorkerComponent } from './core-components/social-worker/social-wo
 import { ContactUsComponent } from './core-components/contact-us/contact-us.component';
 
 const routes: Routes = [
+  { path: 'about-us', component: RajbharHistoryComponent },
   { path: 'history', component: RajbharHistoryComponent },
-  { path: 'photo-gallery', component: PhotoGalleryComponent },
+  { path: 'gallery', component: PhotoGalleryComponent },
+  { path: 'social-worker', component: SocialWorkerComponent },
   { path: 'contact', component: ContactUsComponent },
   { path: '', redirectTo: 'history', pathMatch: 'full' },
   { path: '**', component: SocialWorkerComponent }

@@ -1,29 +1,6 @@
-<div class="toolbar" role="banner">
-    <span>{{ "login.Sitetitle" | translate }}</span>
-    <div class="spacer"></div>
-    <span class="form-inline">
-      <select
-        class="form-control"
-        #selectedLang
-        (change)="switchLang(selectedLang.value)"
-      >
-        <option
-          *ngFor="let language of translate.getLangs()"
-          [value]="language"
-          [selected]="language === translate.currentLang"
-        >
-          {{ language }}
-        </option>
-      </select>
-    </span>
-  </div>
-<div
-  style="
-    max-width: 960px;
-    margin: 10px auto;
-    font-family: 'Courier New', Courier, monospace;
-  "
->
-  <article>{{ "login.history" | translate }}</article>
+<app-header></app-header>
+<div class="container">
+    <!--<article>{{ "login.history" | translate }}</article>-->
+    <router-outlet> </router-outlet>
 </div>
-<router-outlet></router-outlet>
+
