@@ -1,9 +1,20 @@
-.history-title{
-    margin: 20px;
+.history-title {
+  margin: 20px;
 }
-.history-card{
+.history-card {
   padding: 10px;
   margin: 10px 0;
   background-color: white;
-  box-shadow: 1px 2px 30px 1px #aaaaaa
+  box-shadow: 1px 2px 30px 1px #aaaaaa;
+}
+
+.cirlcle {
+  width: 35px;
+  height: 35px;
+  padding: 6px;
+  margin: 0 5px 0 0px;
+  border-radius: 50%;
+  border: 5px solid gray;
+  color: #ffffff;
+  vertical-align: middle;
 }
