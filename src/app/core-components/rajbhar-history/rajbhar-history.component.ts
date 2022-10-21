@@ -7,8 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RajbharHistoryComponent implements OnInit {
   historiesArrObj: any;
+  objArr: any[] = [
+    {
+      name: 'Ramesh',
+      Age: 28,
+    },
+    {
+      name: 'Ramesh',
+      Age: 28,
+    },
+    {
+      name: 'Ramesh',
+      Age: 28,
+    },
+    {
+      name: 'Ramesh',
+      Age: 28,
+    },
+  ];
   public numAndLatters = '0123456789ABCDEF';
-  public randomColor: string = "#";
+  public randomColor: string = '#';
   constructor() {
     this.historiesArrObj = [
       {
@@ -63,7 +81,7 @@ export class RajbharHistoryComponent implements OnInit {
     ];
   }
   ngOnInit(): void {
-     this.getRandomColor();
+    this.getRandomColor();
   }
   getRandomColor() {
     for (var i = 0; i < 6; i++) {
