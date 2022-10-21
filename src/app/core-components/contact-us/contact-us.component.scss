@@ -1,0 +1,25 @@
+.location-icons{
+    color: #149ddd;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #dff3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+input, textarea,.btn-success{
+    border-radius: 0;
+}
+
+.contact{
+    margin: 40px 0;
+}
+.email-form, .info{
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+}
