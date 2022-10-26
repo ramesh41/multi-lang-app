@@ -20,10 +20,12 @@
     "@angular/router": "^14.2.0",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
+    "cordova-android": "^8.1.0",
+    "g": "^2.0.1",
+    "ionic": "^5.4.16",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4",
-    "cordova-android": "^8.1.0"
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.2",
@@ -43,6 +45,8 @@
     "plugins": {
       "cordova-plugin-whitelist": {}
     },
-    "platforms": ["android"]
+    "platforms": [
+      "android"
+    ]
   }
 }

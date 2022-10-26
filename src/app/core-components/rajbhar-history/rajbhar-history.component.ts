@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GetHistoryService } from 'src/app/shared/get-history.service';
 
 @Component({
   selector: 'app-rajbhar-history',
@@ -27,7 +28,7 @@ export class RajbharHistoryComponent implements OnInit {
   ];
   public numAndLatters = '0123456789ABCDEF';
   public randomColor: string = '#';
-  constructor() {
+  constructor(private getHistoryService: GetHistoryService) {
     this.historiesArrObj = [
       {
         title: 'भारशिव वंश',
@@ -82,6 +83,9 @@ export class RajbharHistoryComponent implements OnInit {
   }
   ngOnInit(): void {
     this.getRandomColor();
+    this.getHistoryService.getHistoryInfo().subscribe( data =>{
+      console.log(data);
+    })
   }
   getRandomColor() {
     for (var i = 0; i < 6; i++) {
